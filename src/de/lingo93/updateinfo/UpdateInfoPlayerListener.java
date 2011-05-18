@@ -15,6 +15,9 @@ public class UpdateInfoPlayerListener extends PlayerListener {
 		plugin = instance;
 	}
 	
+	/**
+	 * handles player join event
+	 */
 	public void onPlayerJoin(PlayerJoinEvent event) {
 		if(UpdateInfo.perm((Player)event.getPlayer(), "updateinfo.admin"))
 		plugin.checkOverview(event.getPlayer());

@@ -51,6 +51,9 @@ public class UpdateInfo extends JavaPlugin {
 		log.info("[UpdateInfo] version " + this.getDescription().getVersion() + " enabled.");
 	}
 	
+	/**
+     * handles Commands
+     */
 	@Override
 	public boolean onCommand(CommandSender sender, Command command, String commandLabel, String[] args){
 		String commandName = command.getName().toLowerCase();
@@ -67,6 +70,9 @@ public class UpdateInfo extends JavaPlugin {
 		return false;
 	}
 	
+	/**
+     * checks for new versions
+     */
 	public void checkOverview(Player player){
 		boolean upd = false;
 		String allVersions = "";
@@ -98,6 +104,9 @@ public class UpdateInfo extends JavaPlugin {
 		rsf = received;
 	}
 	
+	/**
+     * sends data to database-server
+     */
 	public String sendData(String send){
 		String received = null;
 		try {

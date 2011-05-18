@@ -1,0 +1,10 @@
+name: UpdateInfo
+main: de.lingo93.updateinfo.UpdateInfo
+version: 0.1
+author: Lingo93
+description: none
+commands:
+  updateinfo:
+    description: checks of a new updates
+    aliases:
+    usage: /<command>
